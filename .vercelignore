@@ -1,0 +1,10 @@
+# Solo aplica al desplegado con la CLI de Vercel.
+# Si conectas el repo a Vercel desde el panel, el que manda es .gitignore.
+
+.DS_Store
+**/.DS_Store
+
+.vscode/
+
+Constancia de Egreso - Sebastian Rocha.png
+cv/~$*.docx

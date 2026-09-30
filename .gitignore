@@ -1,0 +1,10 @@
+# Archivos de sistema de macOS
+.DS_Store
+**/.DS_Store
+
+# Configuracion del editor
+.vscode/
+
+# Archivos sueltos que no deben publicarse en el dominio
+Constancia de Egreso - Sebastian Rocha.png
+cv/~$*.docx

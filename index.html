@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Sebastian Rocha Leiva | Desarrollador Full Stack & Automatización
+    </title>
+    <meta
+      name="description"
+      content="Portafolio de Sebastian Rocha Leiva, desarrollador Full Stack junior especializado en Spring Boot, Node.js, Angular/React y automatización de procesos con n8n e IA (OpenAI, Claude)."
+    />
+    <meta name="theme-color" content="#080808" />
+    <link rel="icon" type="image/png" href="public/favicon.png" />
+
+    <!-- Open Graph / redes sociales -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Sebastian Rocha Leiva | Desarrollador Full Stack & Automatización"
+    />
+    <meta
+      property="og:description"
+      content="APIs REST, microservicios y automatización de procesos con IA. Conoce mis proyectos, experiencia y certificaciones."
+    />
+    <meta property="og:image" content="public/image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Icono de Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Icons de DevIcons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#home" class="logo">Sebastian <span>Rocha</span></a>
+
+      <i
+        class="bx bx-menu"
+        id="menu-icon"
+        role="button"
+        tabindex="0"
+        aria-label="Abrir menú de navegación"
+      ></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Inicio</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#experience">Experiencia</a>
+        <a href="#education">Educación</a>
+        <a href="#services">Habilidades</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>
+          Hola, me llamo <span class="gradient-text">Sebastian Rocha</span>
+        </h1>
+        <h3 class="text-animation" aria-hidden="true">Y soy <span> </span></h3>
+        <p class="sr-only">
+          Soy Desarrollador Frontend, Backend, Web, Fullstack y de Software.
+        </p>
+        <p>
+          Desarrollador Full Stack junior con experiencia práctica en APIs REST
+          (Spring Boot, Node.js), arquitectura de microservicios y despliegue
+          con Docker. Me especializo en automatizar procesos con n8n e integrar
+          APIs de inteligencia artificial (OpenAI, Claude) para entregar
+          soluciones escalables en entornos ágiles. Comprometido con el
+          aprendizaje continuo y la mejora constante.
+        </p>
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/sebastian-rocha-leiva-b5b44a239/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Perfil de LinkedIn de Sebastian Rocha (se abre en una pestaña nueva)"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/sebastianrochaleiva"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Perfil de GitHub de Sebastian Rocha (se abre en una pestaña nueva)"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
+        <div class="btn-group">
+          <a
+            href="https://wa.me/51997885114?text=Hola%20Sebastian,%20te%20escribo%20desde%20tu%20portafolio"
+            class="btn btn-outline"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Escribir a Sebastian Rocha por WhatsApp (se abre en una pestaña nueva)"
+            >Contacto</a
+          >
+          <a
+            href="cv/CV_Sebastian_Rocha_Leiva.pdf"
+            class="btn btn-outline"
+            download
+            >Descargar cv</a
+          >
+        </div>
+      </div>
+      <div class="home-img">
+        <img src="public/image.png" alt="Foto de perfil de Sebastian Rocha" />
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="projects" id="projects">
+      <h2 class="heading">Proyectos</h2>
+      <div class="search-bar">
+        <label for="project-search" class="sr-only"
+          >Filtrar proyectos por tecnología</label
+        >
+        <select
+          id="project-search"
+          aria-label="Filtrar proyectos por tecnología"
+        >
+          <option value="all">Todas las tecnologías</option>
+          <option value="Java">Java</option>
+          <option value="Python">Python</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="HTML/CSS">HTML/CSS</option>
+          <option value="Bootstrap">Bootstrap</option>
+          <option value="React">React</option>
+          <option value="Node.js">Node.js</option>
+          <option value="Express">Express</option>
+          <option value="Tailwind">Tailwind</option>
+        </select>
+      </div>
+
+      <div class="projects-container">
+        <!-- Proyecto 1 -->
+        <a
+          class="project-box"
+          href="https://isilfake.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-tech="HTML/CSS, Bootstrap"
+          aria-label="Ver proyecto Isil Fake (se abre en una pestaña nueva)"
+        >
+          <img
+            src="public/isilfake.png"
+            alt="Captura de pantalla del proyecto Isil Fake, réplica de la web de ISIL"
+            class="project-img"
+          />
+          <h3 class="project-title">Isil Fake</h3>
+          <p class="project-description">
+            Pagina web de ISIL, destacando por su interfaz limpia, navegación
+            fluida y adaptabilidad a cualquier dispositivo.
+          </p>
+          <div class="project-tags">
+            <span>#HTML/CSS</span>
+            <span>#Bootstrap</span>
+          </div>
+        </a>
+
+        <!-- Proyecto 2 -->
+        <a
+          class="project-box"
+          href="https://realstate-sebastian.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-tech="JavaScript, React, Tailwind"
+          aria-label="Ver proyecto Bienes Raíces - Real State (se abre en una pestaña nueva)"
+        >
+          <img
+            src="public/realstate.png"
+            alt="Captura de pantalla del proyecto Real State, landing page inmobiliaria"
+            class="project-img"
+          />
+          <h3 class="project-title">Bienes Raices - Real State</h3>
+          <p class="project-description">
+            Landing Page de una inmobiliaria, diseñada de forma responsive,
+            utilizando tecnologías modernas como React y Tailwind.
+          </p>
+          <div class="project-tags">
+            <span>#JavaScript</span>
+            <span>#React</span>
+            <span>#Tailwind</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Experiencia Profesional -->
+    <section class="experience" id="experience">
+      <h2 class="heading">Experiencia Profesional</h2>
+      <div class="timeline-items single-item">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Mayo 2025 - Octubre 2025</div>
+          <div class="timeline-content">
+            <h3><b>Keola Groups - FullStack Developer (Freelance)</b></h3>
+            <p>
+              Desarrollé una arquitectura de
+              <strong>5 microservicios</strong> con Spring Boot y optimicé el
+              rendimiento de PostgreSQL. Creé interfaces en Angular enfocadas en
+              la experiencia de usuario, trabajando bajo metodología
+              <strong>Scrum</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formacion Academica -->
+    <section class="education" id="education">
+      <h2 class="heading">Formación Académica</h2>
+
+      <!-- Educacion Principal -->
+      <div class="education-main-card">
+        <div class="education-card-icon">🎓</div>
+        <div class="education-card-content">
+          <h3>Técnico en Desarrollo de Sistemas de Información</h3>
+          <span class="education-card-date">Egresado | Tercio superior</span>
+          <p>Instituto San Ignacio de Loyola</p>
+          <p class="education-card-subtitle">2022 - 2024</p>
+        </div>
+      </div>
+
+      <!-- Certificaciones -->
+      <h3 class="certifications-title">Certificaciones</h3>
+      <div class="certifications-grid">
+        <div class="cert-card">
+          <div class="cert-card-icon">🏆</div>
+          <div class="cert-card-content">
+            <h4>Programación con Java Standard</h4>
+            <span>2025</span>
+          </div>
+          <a
+            href="https://drive.google.com/file/d/1S3KUOwWIy15yNeETjSGYw1KQC9_CESR3/view?usp=drive_link"
+            class="cert-card-link"
+            >Ver →</a
+          >
+        </div>
+        <div class="cert-card">
+          <div class="cert-card-icon">🏆</div>
+          <div class="cert-card-content">
+            <h4>Programación con JavaScript</h4>
+            <span>2025</span>
+          </div>
+          <a
+            href="https://drive.google.com/file/d/1UANE5r43_He_0WP3v-kGCW9l1f7_hlVe/view?usp=drive_link"
+            class="cert-card-link"
+            >Ver →</a
+          >
+        </div>
+        <div class="cert-card">
+          <div class="cert-card-icon">🏆</div>
+          <div class="cert-card-content">
+            <h4>Desarrollo con IA</h4>
+            <span>2025</span>
+          </div>
+          <a
+            href="https://drive.google.com/file/d/1eS_a3nHSi_NNkXBjTAundPANGwAl3C75/view?usp=drive_link"
+            class="cert-card-link"
+            >Ver →</a
+          >
+        </div>
+        <div class="cert-card">
+          <div class="cert-card-icon">🏆</div>
+          <div class="cert-card-content">
+            <h4>Tec. de Desarrollo de Software</h4>
+            <span>2024</span>
+          </div>
+          <a
+            href="https://drive.google.com/file/d/18_oNTEqcGDoaqm0A3mKuMjHRBZ7LFX4c/view?usp=drive_link"
+            class="cert-card-link"
+            >Ver →</a
+          >
+        </div>
+        <div class="cert-card">
+          <div class="cert-card-icon">🏆</div>
+          <div class="cert-card-content">
+            <h4>Análisis y Diseño de Sistemas</h4>
+            <span>2024</span>
+          </div>
+          <a
+            href="https://drive.google.com/file/d/1FuBNKT3bA5KYdJzbThhpKBkJZVfGgubt/view?usp=sharing"
+            class="cert-card-link"
+            >Ver →</a
+          >
+        </div>
+        <div class="cert-card">
+          <div class="cert-card-icon">🏆</div>
+          <div class="cert-card-content">
+            <h4>Despliegue y Calidad de Sistemas</h4>
+            <span>2024</span>
+          </div>
+          <a
+            href="https://drive.google.com/file/d/14tU4JX-z-kD7xdMvknydeIFVeqMECWAd/view?usp=sharing"
+            class="cert-card-link"
+            >Ver →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="services" id="services">
+      <h2 class="heading">Habilidades</h2>
+      <div class="services-container">
+        <div class="service-box">
+          <div class="service-info">
+            <h4>Lenguajes</h4>
+            <p>
+              <i class="devicon-python-plain" title="Python"></i>
+              <i class="devicon-java-plain" title="Java"></i>
+              <i class="devicon-javascript-plain icon" title="JavaScript"></i>
+              <i class="devicon-typescript-plain icon" title="TypeScript"></i>
+              <i class="devicon-html5-plain-wordmark icon" title="HTML"></i>
+              <i class="devicon-css3-plain-wordmark icon" title="CSS"></i>
+            </p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-info">
+            <h4>Frameworks y bibliotecas</h4>
+            <p>
+              <i class="devicon-angularjs-plain icon" title="Angular"></i>
+              <i
+                class="devicon-spring-original-wordmark icon"
+                title="Spring"
+              ></i>
+              <i class="devicon-react-original icon" title="React"></i>
+              <i class="devicon-nodejs-plain-wordmark icon" title="Node.js"></i>
+              <i class="devicon-django-plain-wordmark" title="Django"></i>
+            </p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-info">
+            <h4>Bases de datos</h4>
+            <p>
+              <i class="devicon-mysql-plain-wordmark icon" title="MySQL"></i>
+              <i
+                class="devicon-microsoftsqlserver-plain-wordmark icon"
+                title="Microsoft SQL Server"
+              ></i>
+              <i
+                class="devicon-mongodb-plain-wordmark icon"
+                title="MongoDB"
+              ></i>
+              <i class="devicon-postgresql-plain"></i>
+            </p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-info">
+            <h4>IA y Automatización</h4>
+            <p class="skills-icons">
+              <img src="public/n8n.svg" alt="n8n" class="skill-icon" />
+              <img
+                src="public/opencode-logo-light.svg"
+                alt="OpenCode"
+                class="skill-icon"
+              />
+            </p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-info">
+            <h4>Herramientas</h4>
+            <p>
+              <i class="devicon-github-original icon" title="GitHub"></i>
+              <i class="devicon-amazonwebservices-plain-wordmark"></i>
+              <i
+                class="devicon-vscode-plain-wordmark icon"
+                title="Visual Studio Code"
+              ></i>
+              <i
+                class="devicon-androidstudio-plain icon"
+                title="Android Studio"
+              ></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contacto</h2>
+      <form id="contactForm">
+        <div class="input-group">
+          <div class="input-box">
+            <label for="fullName" class="sr-only">Nombre completo</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Nombre Completo"
+              autocomplete="name"
+              required
+            />
+            <label for="email" class="sr-only">Correo electrónico</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              autocomplete="email"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label for="phone" class="sr-only">Teléfono</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Telefono"
+              pattern="[0-9+\s]{6,15}"
+              autocomplete="tel"
+              required
+            />
+            <label for="subject" class="sr-only">Asunto</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Asunto"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="input-group-2">
+          <label for="message" class="sr-only">Mensaje</label>
+          <textarea
+            id="message"
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Mensaje"
+            required
+          ></textarea>
+          <input
+            type="submit"
+            id="contactSubmit"
+            value="Enviar mensaje"
+            class="btn btn-outline"
+          />
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="social">
+        <a
+          href="https://www.linkedin.com/in/sebastian-rocha-leiva-b5b44a239/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Perfil de LinkedIn de Sebastian Rocha (se abre en una pestaña nueva)"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a
+          href="https://github.com/sebastianrochaleiva"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Perfil de GitHub de Sebastian Rocha (se abre en una pestaña nueva)"
+          ><i class="bx bxl-github"></i
+        ></a>
+      </div>
+
+      <ul class="list">
+        <li>
+          <a href="#home">Sobre mí</a>
+        </li>
+
+        <li>
+          <a href="#projects">Proyectos</a>
+        </li>
+
+        <li>
+          <a href="#experience">Experiencia</a>
+        </li>
+
+        <li>
+          <a href="#education">Educación</a>
+        </li>
+
+        <li>
+          <a href="#services">Habilidades</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contactame</a>
+        </li>
+
+        <p class="copyright">
+          © 2026 Sebastian Rocha. Todos los derechos reservados.
+        </p>
+      </ul>
+    </footer>
+
+    <!-- EmailJS: debe cargarse ANTES de script.js, si no emailjs no existe todavia -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+    <!-- Bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
